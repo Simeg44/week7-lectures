@@ -1,0 +1,6 @@
+{
+  "name": "mongoose-basic",
+  "dependencies": {
+    "mongoose": "~3.8.17"
+  }
+}

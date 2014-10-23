@@ -1,0 +1,19 @@
+doctype html
+html(lang='en')
+	head
+		meta(charset="utf-8")
+		title Big App
+		link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css")
+
+	body
+		.container
+			block content
+
+		//-  Get jQuery loaded
+		script(src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js")
+		//- Get bootstrap's js
+		script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js")
+
+		//- Load custom js file
+		script(src="scripts/main.js")
+		

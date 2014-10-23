@@ -1,0 +1,25 @@
+extends layout
+
+block content
+	h1 Hello Boulder!
+
+	h2 Add a Drug
+	form(method="post" action="/smokeIt")
+		input(type="text" name="name" placeholder="Name")
+		input(type="text" name="effect" placeholder="Effect")
+		input(type="text" name="dosage" placeholder="Dosage")
+		input(type="submit")
+
+	h2 All Drugs
+	ul
+		for drug in drugs
+			//- Print an li for each drug
+			li 
+				h5= drug.name
+				em= drug.effect
+				strong= drug. dosage
+				//- example of a link that would allow the 
+					the server to know exactly which instance
+					we are talking about... Doesn't work in this
+					app atm
+				a(href="/delete/#{drug._id}") Delete
